@@ -20,7 +20,7 @@ const defineHTML = () => {
   <img src = "https://media.makeameme.org/created/padh-le-bhai.jpg">
   </div>`
 }
-const forbiddenURLs = ["twitter.com", "web.whatsapp.com","instagram.com","www.netflix.com","www.youtube.com","pinterest.com","reddit.com","amazon.com","music.youtube.com","facebook.com"];
+const forbiddenURLs = ["twitter.com", "web.whatsapp.com","www.instagram.com","www.netflix.com","www.youtube.com","pinterest.com","reddit.com","amazon.com","music.youtube.com","facebook.com"];
 const set = new Set(forbiddenURLs);
 if (set.has(window.location.hostname)) {
   document.head.innerHTML = defineCSS();
