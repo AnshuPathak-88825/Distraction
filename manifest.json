@@ -3,15 +3,23 @@
   "name": "padh le bhaii",
   "version": "0.0.1",
   "description": "Extension to make you get back to work",
-  "icons": { 
+  "icons": {
     "16": "images/padhai-kar-le-bhai-16.png",
     "48": "images/padhai-kar-le-bhai-48.png",
     "128": "images/padhai-kar-le-bhai-128.png"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["blocker.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "blocker.js"
+      ]
     }
-  ]
+  ],
+  "action": {
+    "default_popup": "popup.html"
+    
+  }
 }
